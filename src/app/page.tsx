@@ -7,6 +7,7 @@ import Servicios from "@/components/Servicios";
 import Proceso from "@/components/Proceso";
 import Casos from "@/components/Casos";
 import ParaVos from "@/components/ParaVos";
+import Founders from "@/components/Founders";
 import CtaFinal from "@/components/CtaFinal";
 import Footer from "@/components/Footer";
 
@@ -22,6 +23,7 @@ export default function Home() {
       <Proceso />
       <Casos />
       <ParaVos />
+      <Founders />
       <CtaFinal />
       <Footer />
     </>
