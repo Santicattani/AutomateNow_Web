@@ -26,7 +26,7 @@ export default function Navbar() {
         <div className="w-full max-w-[1160px] mx-auto px-6 flex items-center justify-between gap-6">
           <a href="#" className="flex items-center gap-2 font-['Syne'] text-[1.05rem] text-white no-underline flex-shrink-0">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M12 2 L13.5 10.5 L22 12 L13.5 13.5 L12 22 L10.5 13.5 L2 12 L10.5 10.5 Z" fill="#C4FF80" />
+              <path d="M12 1 C12 1 10.8 10.8 1 12 C10.8 13.2 12 23 12 23 C12 23 13.2 13.2 23 12 C13.2 10.8 12 1 12 1 Z" fill="#C4FF80" />
             </svg>
             <span className="flex items-baseline">
               <span className="font-extrabold text-white">Automate</span>
