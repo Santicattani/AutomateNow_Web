@@ -45,14 +45,8 @@ export default function Footer() {
       <div className="w-full max-w-[1160px] mx-auto px-6">
         <div className="flex flex-wrap items-center justify-between gap-6">
           <div>
-            <div className="flex items-center gap-2 font-['Syne'] font-bold text-base text-white">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M12 1 C12 1 10.8 10.8 1 12 C10.8 13.2 12 23 12 23 C12 23 13.2 13.2 23 12 C13.2 10.8 12 1 12 1 Z" fill="#C4FF80" />
-              </svg>
-              <span>
-                <span className="font-extrabold">Automate</span>
-                <span className="font-normal text-[#C4FF80] text-[0.9em]">now</span>
-              </span>
+            <div>
+              <img src="/Recurso 131.png" alt="Automate Now" className="h-7 w-auto" />
             </div>
             <p className="text-[0.78rem] text-[#9CA3AF] mt-1">Consultores en automatización e IA</p>
           </div>
