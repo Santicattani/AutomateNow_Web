@@ -1,7 +1,7 @@
 "use client";
 import { useState, FormEvent } from "react";
 
-const WEBHOOK_URL = "YOUR_WEBHOOK_URL_HERE";
+const WEBHOOK_URL = "https://n8n-n8n.p88mjk.easypanel.host/webhook-test/3bbfa67c-f795-4352-bf27-03e921fae2e8";
 
 export default function CtaFinal() {
   const [loading, setLoading] = useState(false);
