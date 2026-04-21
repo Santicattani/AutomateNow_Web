@@ -52,7 +52,8 @@ export default function CtaFinal() {
       } else {
         throw new Error("Server error");
       }
-    } catch {
+    } catch (err) {
+      console.error("Form submission error:", err);
       setFeedback({ type: "error", msg: "Ocurrió un error. Escribinos directo a nuestro WhatsApp." });
     } finally {
       setLoading(false);
@@ -60,7 +61,7 @@ export default function CtaFinal() {
   }
 
   const inputClass = (field: string) =>
-    `w-full bg-[rgba(255,255,255,0.04)] border rounded-lg px-4 py-3 text-white font-['DM_Sans'] text-[0.9rem] outline-none transition-all placeholder:text-[rgba(156,163,175,0.45)] focus:shadow-[0_0_0_3px_rgba(125,0,220,0.08)] ${
+    `w-full bg-[rgba(255,255,255,0.04)] border rounded-lg px-4 py-3 text-white font-['Inter'] text-[0.9rem] outline-none transition-all placeholder:text-[rgba(156,163,175,0.45)] focus:shadow-[0_0_0_3px_rgba(125,0,220,0.08)] ${
       errors[field]
         ? "border-[rgba(239,68,68,0.6)]"
         : "border-[rgba(255,255,255,0.08)] focus:border-[rgba(125,0,220,0.5)]"
@@ -79,7 +80,7 @@ export default function CtaFinal() {
           <span className="inline-block text-[0.7rem] font-semibold tracking-[0.16em] uppercase text-[#C4FF80] mb-4">
             Siguiente paso
           </span>
-          <h2 className="font-['Syne'] text-[clamp(1.7rem,3vw,2.4rem)] font-extrabold text-white mb-[1.1rem] leading-[1.1]">
+          <h2 className="font-['Inter'] text-[clamp(1.7rem,3vw,2.4rem)] font-extrabold text-white mb-[1.1rem] leading-[1.1]">
             Empezá con una llamada de diagnóstico
           </h2>
           <p className="text-[1.05rem] text-[#9CA3AF] mb-9 leading-[1.7]">

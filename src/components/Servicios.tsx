@@ -83,7 +83,7 @@ export default function Servicios() {
           <span className="inline-block text-[0.7rem] font-semibold tracking-[0.16em] uppercase text-[#C4FF80] mb-4">
             Servicios
           </span>
-          <h2 className="font-['Syne'] text-[clamp(1.9rem,4vw,3rem)] font-bold text-white mb-5 leading-[1.1]">
+          <h2 className="font-['Inter'] text-[clamp(1.9rem,4vw,3rem)] font-bold text-white mb-5 leading-[1.1]">
             ¿Qué podemos automatizar en tu negocio?
           </h2>
           <p className="text-[1.05rem] text-[#9CA3AF] max-w-[580px] mx-auto">
@@ -108,7 +108,7 @@ export default function Servicios() {
                 {s.icon}
               </div>
               <div>
-                <h3 className="font-['Syne'] text-[0.95rem] font-bold text-white mb-[0.35rem]">{s.title}</h3>
+                <h3 className="font-['Inter'] text-[0.95rem] font-bold text-white mb-[0.35rem]">{s.title}</h3>
                 <p className="text-[0.85rem] text-[#9CA3AF] leading-[1.55]">{s.desc}</p>
               </div>
             </motion.div>

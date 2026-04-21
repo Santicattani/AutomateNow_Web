@@ -151,7 +151,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.25, ease: [0.22, 0.68, 0, 1.2] }}
-          className="font-['Syne'] text-[clamp(1.9rem,3.5vw,3rem)] font-extrabold text-white mb-6 leading-[1.1] tracking-[-0.02em]"
+          className="font-['Inter'] text-[clamp(1.9rem,3.5vw,3rem)] font-extrabold text-white mb-6 leading-[1.1] tracking-[-0.02em]"
         >
           Entendemos tu negocio.<br />
           Lo potenciamos con<br />

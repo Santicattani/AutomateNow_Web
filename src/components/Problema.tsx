@@ -13,7 +13,7 @@ export default function Problema() {
         <span className="inline-block text-[0.7rem] font-semibold tracking-[0.16em] uppercase text-[#C4FF80] mb-4">
           El Problema
         </span>
-        <h2 className="font-['Syne'] text-[clamp(1.9rem,4vw,3rem)] font-bold text-white mb-5 leading-[1.1]">
+        <h2 className="font-['Inter'] text-[clamp(1.9rem,4vw,3rem)] font-bold text-white mb-5 leading-[1.1]">
           Tu negocio creció.<br />Tus procesos, no.
         </h2>
 
