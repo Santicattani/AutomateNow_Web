@@ -46,7 +46,7 @@ export default function Footer() {
         <div className="flex flex-wrap items-center justify-between gap-6">
           <div>
             <div>
-              <img src="/Recurso 131.png" alt="Automate Now" className="h-7 w-auto" />
+              <img src="/logo.png" alt="Automate Now" className="h-7 w-auto" />
             </div>
             <p className="text-[0.78rem] text-[#9CA3AF] mt-1">Consultores en automatización e IA</p>
           </div>

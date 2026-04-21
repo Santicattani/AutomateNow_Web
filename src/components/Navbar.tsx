@@ -25,7 +25,7 @@ export default function Navbar() {
       >
         <div className="w-full max-w-[1160px] mx-auto px-6 flex items-center justify-between gap-6">
           <a href="#" className="flex-shrink-0 no-underline">
-            <img src="/Recurso 131.png" alt="Automate Now" className="h-8 w-auto" />
+            <img src="/logo.png" alt="Automate Now" className="h-8 w-auto" />
           </a>
 
           <ul className="hidden md:flex items-center gap-8 list-none">
