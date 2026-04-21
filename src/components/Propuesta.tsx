@@ -38,7 +38,7 @@ export default function Propuesta() {
             Lo que hacemos
           </span>
           <div className="max-w-[640px] mb-12">
-            <h2 className="font-['Inter'] text-[clamp(1.5rem,2.5vw,2.1rem)] font-bold text-white mb-5 leading-[1.1]">
+            <h2 className="font-['Neue_Haas_Grotesk_Display'] text-[clamp(1.5rem,2.5vw,2.1rem)] font-bold text-white mb-5 leading-[1.1]">
               No vendemos software. Entendemos tu negocio y construimos las herramientas que necesitás.
             </h2>
             <p className="text-[1.05rem] text-[#9CA3AF] max-w-[580px]">
@@ -61,10 +61,10 @@ export default function Propuesta() {
               className="relative bg-[#0f0f0f] border border-[rgba(255,255,255,0.08)] rounded-[14px] p-[2rem_1.75rem_1.75rem] overflow-hidden min-h-[220px] flex flex-col justify-between hover:border-[rgba(125,0,220,0.3)] hover:shadow-[0_0_30px_rgba(125,0,220,0.07)] transition-all group"
             >
               <div>
-                <h3 className="font-['Inter'] text-base font-bold text-white mb-[0.6rem]">{c.title}</h3>
+                <h3 className="font-['Neue_Haas_Grotesk_Display'] text-base font-bold text-white mb-[0.6rem]">{c.title}</h3>
                 <p className="text-[0.875rem] text-[#9CA3AF] leading-[1.6]">{c.desc}</p>
               </div>
-              <span className="absolute bottom-5 right-6 font-['Inter'] text-[3.5rem] font-extrabold text-[rgba(255,255,255,0.04)] leading-none select-none group-hover:text-[rgba(125,0,220,0.08)] transition-colors">
+              <span className="absolute bottom-5 right-6 font-['Neue_Haas_Grotesk_Display'] text-[3.5rem] font-extrabold text-[rgba(255,255,255,0.04)] leading-none select-none group-hover:text-[rgba(125,0,220,0.08)] transition-colors">
                 {c.num}
               </span>
             </motion.div>

@@ -80,7 +80,7 @@ export default function Navbar() {
             <a
               key={item}
               href={`#${item === "Casos de Éxito" ? "casos" : item === "Contacto" ? "cta-final" : item.toLowerCase()}`}
-              className="font-['Inter'] text-2xl font-bold text-white hover:text-[#7D00DC] transition-colors"
+              className="font-['Neue_Haas_Grotesk_Display'] text-2xl font-bold text-white hover:text-[#7D00DC] transition-colors"
               onClick={closeMobileNav}
             >
               {item}

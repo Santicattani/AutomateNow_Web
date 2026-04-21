@@ -27,7 +27,7 @@ export default function Founders() {
           <span className="inline-block text-[0.7rem] font-semibold tracking-[0.16em] uppercase text-[#C4FF80] mb-4">
             El equipo
           </span>
-          <h2 className="font-['Inter'] text-[clamp(1.9rem,4vw,3rem)] font-bold text-white leading-[1.1]">
+          <h2 className="font-['Neue_Haas_Grotesk_Display'] text-[clamp(1.9rem,4vw,3rem)] font-bold text-white leading-[1.1]">
             Las personas detrás de Automate Now
           </h2>
           <p className="text-[1.05rem] text-[#9CA3AF] mt-5 max-w-[560px] mx-auto leading-[1.7]">
@@ -52,7 +52,7 @@ export default function Founders() {
                 )}
               </div>
 
-              <h3 className="font-['Inter'] text-[1.1rem] font-bold text-white mb-1">{f.name}</h3>
+              <h3 className="font-['Neue_Haas_Grotesk_Display'] text-[1.1rem] font-bold text-white mb-1">{f.name}</h3>
               <span className="text-[0.78rem] font-semibold tracking-[0.1em] uppercase text-[#7D00DC] mb-4">{f.role}</span>
               <p className="text-[0.9rem] text-[#9CA3AF] leading-[1.7]">{f.bio}</p>
             </div>

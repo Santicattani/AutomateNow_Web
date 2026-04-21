@@ -17,7 +17,7 @@ export default function StatsBar() {
               <div className="text-[0.68rem] font-semibold tracking-[0.14em] uppercase text-[#9CA3AF] mb-[0.35rem]">
                 {s.label}
               </div>
-              <div className="font-['Inter'] text-[1.75rem] font-extrabold text-[#7D00DC] leading-none">
+              <div className="font-['Neue_Haas_Grotesk_Display'] text-[1.75rem] font-extrabold text-[#7D00DC] leading-none">
                 {s.value}
               </div>
             </div>

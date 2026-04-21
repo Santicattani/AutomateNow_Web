@@ -2,6 +2,38 @@
 @import "tw-animate-css";
 @import "shadcn/tailwind.css";
 
+@font-face {
+  font-family: "Neue Haas Grotesk Display";
+  src: url("/fonts/Neue_Haas_Grotesk_Collection/Neue Haas Grotesk Display Family/NeueHaasGrotDisp-55Roman-Trial.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Neue Haas Grotesk Display";
+  src: url("/fonts/Neue_Haas_Grotesk_Collection/Neue Haas Grotesk Display Family/NeueHaasGrotDisp-65Medium-Trial.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Neue Haas Grotesk Display";
+  src: url("/fonts/Neue_Haas_Grotesk_Collection/Neue Haas Grotesk Display Family/NeueHaasGrotDisp-75Bold-Trial.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Neue Haas Grotesk Display";
+  src: url("/fonts/Neue_Haas_Grotesk_Collection/Neue Haas Grotesk Display Family/NeueHaasGrotDisp-95Black-Trial.otf") format("opentype");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
@@ -126,12 +158,12 @@
   }
   html {
     scroll-behavior: smooth;
-    font-family: var(--font-inter), sans-serif;
+    font-family: "Neue Haas Grotesk Display", sans-serif, sans-serif;
   }
   body {
     background-color: #000000;
     color: #ffffff;
-    font-family: var(--font-inter), sans-serif;
+    font-family: "Neue Haas Grotesk Display", sans-serif, sans-serif;
     font-size: 16px;
     line-height: 1.6;
     overflow-x: hidden;

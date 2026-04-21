@@ -26,7 +26,7 @@ export default function Proceso() {
           <span className="inline-block text-[0.7rem] font-semibold tracking-[0.16em] uppercase text-[#C4FF80] mb-4">
             Nuestro Proceso
           </span>
-          <h2 className="font-['Inter'] text-[clamp(1.9rem,4vw,3rem)] font-bold text-white leading-[1.1]">
+          <h2 className="font-['Neue_Haas_Grotesk_Display'] text-[clamp(1.9rem,4vw,3rem)] font-bold text-white leading-[1.1]">
             Cómo trabajamos en Automate Now
           </h2>
         </FadeInUp>
@@ -53,10 +53,10 @@ export default function Proceso() {
               variants={stepVariants}
               className="flex flex-col items-center text-center px-2 relative z-[1]"
             >
-              <div className="w-[52px] h-[52px] rounded-full bg-black border-2 border-[#7D00DC] flex items-center justify-center font-['Inter'] font-extrabold text-base text-[#7D00DC] mb-6 relative z-[2] shadow-[0_0_0_6px_black] flex-shrink-0">
+              <div className="w-[52px] h-[52px] rounded-full bg-black border-2 border-[#7D00DC] flex items-center justify-center font-['Neue_Haas_Grotesk_Display'] font-extrabold text-base text-[#7D00DC] mb-6 relative z-[2] shadow-[0_0_0_6px_black] flex-shrink-0">
                 {s.n}
               </div>
-              <h3 className="font-['Inter'] text-[0.9rem] font-bold text-white mb-[0.4rem]">{s.title}</h3>
+              <h3 className="font-['Neue_Haas_Grotesk_Display'] text-[0.9rem] font-bold text-white mb-[0.4rem]">{s.title}</h3>
               <p className="text-[0.8rem] text-[#9CA3AF] leading-[1.5]">{s.desc}</p>
             </motion.div>
           ))}
@@ -67,11 +67,11 @@ export default function Proceso() {
           {steps.map((s, i) => (
             <FadeInUp key={s.n} delay={i * 0.1}>
               <div className="flex items-start gap-5 text-left">
-                <div className="w-[52px] h-[52px] rounded-full bg-black border-2 border-[#7D00DC] flex items-center justify-center font-['Inter'] font-extrabold text-base text-[#7D00DC] flex-shrink-0">
+                <div className="w-[52px] h-[52px] rounded-full bg-black border-2 border-[#7D00DC] flex items-center justify-center font-['Neue_Haas_Grotesk_Display'] font-extrabold text-base text-[#7D00DC] flex-shrink-0">
                   {s.n}
                 </div>
                 <div>
-                  <h3 className="font-['Inter'] text-[0.9rem] font-bold text-white mb-[0.4rem]">{s.title}</h3>
+                  <h3 className="font-['Neue_Haas_Grotesk_Display'] text-[0.9rem] font-bold text-white mb-[0.4rem]">{s.title}</h3>
                   <p className="text-[0.8rem] text-[#9CA3AF] leading-[1.5]">{s.desc}</p>
                 </div>
               </div>

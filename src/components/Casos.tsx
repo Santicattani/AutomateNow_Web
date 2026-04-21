@@ -59,7 +59,7 @@ export default function Casos() {
           <span className="inline-block text-[0.7rem] font-semibold tracking-[0.16em] uppercase text-[#C4FF80] mb-4">
             Casos de Éxito
           </span>
-          <h2 className="font-['Inter'] text-[clamp(1.9rem,4vw,3rem)] font-bold text-white leading-[1.1]">
+          <h2 className="font-['Neue_Haas_Grotesk_Display'] text-[clamp(1.9rem,4vw,3rem)] font-bold text-white leading-[1.1]">
             Resultados reales para negocios reales
           </h2>
         </FadeInUp>
@@ -83,7 +83,7 @@ export default function Casos() {
               <div className="text-[0.7rem] font-semibold tracking-[0.12em] uppercase text-[#7D00DC] mb-[0.45rem]">
                 {c.empresa}
               </div>
-              <h3 className="font-['Inter'] text-base font-bold text-white mb-3">{c.title}</h3>
+              <h3 className="font-['Neue_Haas_Grotesk_Display'] text-base font-bold text-white mb-3">{c.title}</h3>
               <p className="text-[0.85rem] text-[#9CA3AF] leading-[1.55] mb-4">{c.problema}</p>
               <div className="flex items-start gap-2 bg-[rgba(125,0,220,0.07)] border border-[rgba(125,0,220,0.15)] rounded-lg px-4 py-3 text-[0.825rem] text-[#9CA3AF] leading-[1.45] before:content-['✅'] before:flex-shrink-0">
                 {c.resultado}
