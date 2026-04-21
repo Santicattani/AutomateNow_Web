@@ -1,5 +1,6 @@
 "use client";
 import { useEffect, useRef } from "react";
+import { motion } from "framer-motion";
 import AnimatedGradientBackground from "@/components/ui/animated-gradient-background";
 
 function NodeCanvas() {
@@ -110,23 +111,23 @@ export default function Hero() {
       id="hero"
       className="relative min-h-screen flex items-center justify-center text-center overflow-hidden p-0"
     >
-      {/* Animated gradient background */}
       <AnimatedGradientBackground
-        Breathing
-        startingGap={65}
+        startingGap={80}
+        Breathing={true}
+        animationSpeed={0.015}
         breathingRange={4}
-        animationSpeed={0.012}
+        topOffset={60}
+        gradientPosition="50% 20%"
         gradientColors={[
-          "rgba(155,0,255,0.95)",
-          "rgba(196,255,128,0.6)",
-          "rgba(125,0,220,0.45)",
-          "rgba(20,0,45,0.7)",
-          "#000000",
+          "#0A0A0A",
+          "#0A0A0A",
+          "#1a0a2e",
+          "#2d1054",
+          "#4a1a8a",
+          "#6b21c8",
+          "#7c3aed",
         ]}
-        gradientStops={[0, 28, 52, 72, 100]}
-        containerStyle={{
-          background: `radial-gradient(65% 65% at 50% 130%, rgba(155,0,255,0.95) 0%, rgba(196,255,128,0.6) 28%, rgba(125,0,220,0.45) 52%, rgba(20,0,45,0.7) 72%, #000000 100%)`,
-        }}
+        gradientStops={[20, 35, 50, 62, 73, 85, 100]}
       />
 
       {/* Animated node network */}
@@ -136,23 +137,42 @@ export default function Hero() {
       <div className="absolute bottom-0 left-0 right-0 h-[180px] bg-gradient-to-b from-transparent to-black pointer-events-none z-[2]" />
 
       <div className="relative z-[3] max-w-[820px] px-6 pt-[9rem] pb-[6rem] flex flex-col items-center">
-        {/* Label */}
-        <div className="inline-flex items-center gap-2 bg-[rgba(196,255,128,0.08)] border border-[rgba(196,255,128,0.25)] rounded-full px-[1.1rem] py-[0.35rem] text-[0.78rem] font-medium tracking-[0.08em] text-[#C4FF80] mb-8">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.1, ease: [0.22, 0.68, 0, 1.2] }}
+          className="inline-flex items-center gap-2 bg-[rgba(196,255,128,0.08)] border border-[rgba(196,255,128,0.25)] rounded-full px-[1.1rem] py-[0.35rem] text-[0.78rem] font-medium tracking-[0.08em] text-[#C4FF80] mb-8"
+        >
           <span className="w-[6px] h-[6px] rounded-full bg-[#C4FF80] animate-pulse" />
           Consultoría en IA &amp; Automatización
-        </div>
+        </motion.div>
 
-        <h1 className="font-['Syne'] text-[clamp(1.9rem,3.5vw,3rem)] font-extrabold text-white mb-6 leading-[1.1] tracking-[-0.02em]">
+        <motion.h1
+          initial={{ opacity: 0, y: 24 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7, delay: 0.25, ease: [0.22, 0.68, 0, 1.2] }}
+          className="font-['Syne'] text-[clamp(1.9rem,3.5vw,3rem)] font-extrabold text-white mb-6 leading-[1.1] tracking-[-0.02em]"
+        >
           Entendemos tu negocio.<br />
           Lo potenciamos con<br />
           <em className="not-italic text-[#C4FF80]">IA y automatización.</em>
-        </h1>
+        </motion.h1>
 
-        <p className="text-[1.1rem] text-[#9CA3AF] mb-9 max-w-[540px] leading-[1.7]">
+        <motion.p
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.4, ease: "easeOut" }}
+          className="text-[1.1rem] text-[#9CA3AF] mb-9 max-w-[540px] leading-[1.7]"
+        >
           Trabajamos como consultores: primero entendemos tus procesos, después diseñamos y construimos las soluciones que realmente necesitás.
-        </p>
+        </motion.p>
 
-        <div className="flex flex-wrap justify-center gap-[0.6rem] mb-10">
+        <motion.div
+          initial={{ opacity: 0, y: 16 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.55, ease: "easeOut" }}
+          className="flex flex-wrap justify-center gap-[0.6rem] mb-10"
+        >
           {["Automatización de procesos", "IA aplicada", "Soluciones a medida"].map((b) => (
             <span
               key={b}
@@ -164,9 +184,14 @@ export default function Hero() {
               {b}
             </span>
           ))}
-        </div>
+        </motion.div>
 
-        <div className="flex flex-col items-center gap-[0.9rem]">
+        <motion.div
+          initial={{ opacity: 0, y: 16 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.7, ease: "easeOut" }}
+          className="flex flex-col items-center gap-[0.9rem]"
+        >
           <a
             href="#cta-final"
             className="inline-flex items-center gap-2 px-[2.2rem] py-4 text-base font-semibold text-white rounded-full no-underline cursor-pointer transition-transform hover:scale-105 active:scale-95"
@@ -180,7 +205,7 @@ export default function Hero() {
           <p className="text-[0.78rem] text-[#9CA3AF] opacity-60 tracking-[0.03em]">
             Sin compromiso · Enfoque consultivo · Soluciones a medida
           </p>
-        </div>
+        </motion.div>
       </div>
     </section>
   );

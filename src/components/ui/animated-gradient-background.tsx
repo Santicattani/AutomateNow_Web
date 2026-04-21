@@ -11,6 +11,7 @@ interface AnimatedGradientBackgroundProps {
   containerStyle?: React.CSSProperties;
   containerClassName?: string;
   topOffset?: number;
+  gradientPosition?: string;
 }
 
 const AnimatedGradientBackground: React.FC<AnimatedGradientBackgroundProps> = ({
@@ -31,6 +32,7 @@ const AnimatedGradientBackground: React.FC<AnimatedGradientBackgroundProps> = ({
   containerStyle = {},
   topOffset = 0,
   containerClassName = "",
+  gradientPosition = "50% 50%",
 }) => {
   if (gradientColors.length !== gradientStops.length) {
     throw new Error(
@@ -58,7 +60,7 @@ const AnimatedGradientBackground: React.FC<AnimatedGradientBackgroundProps> = ({
         .map((stop, index) => `${gradientColors[index]} ${stop}%`)
         .join(", ");
 
-      const gradient = `radial-gradient(${width}% ${width + topOffset}% at 50% 20%, ${gradientStopsString})`;
+      const gradient = `radial-gradient(${width}% ${width + topOffset}% at ${gradientPosition}, ${gradientStopsString})`;
 
       if (containerRef.current) {
         containerRef.current.style.background = gradient;
@@ -70,7 +72,7 @@ const AnimatedGradientBackground: React.FC<AnimatedGradientBackgroundProps> = ({
     animationFrame = requestAnimationFrame(animateGradient);
 
     return () => cancelAnimationFrame(animationFrame);
-  }, [startingGap, Breathing, gradientColors, gradientStops, animationSpeed, breathingRange, topOffset]);
+  }, [startingGap, Breathing, gradientColors, gradientStops, animationSpeed, breathingRange, topOffset, gradientPosition]);
 
   return (
     <motion.div

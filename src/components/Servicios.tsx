@@ -1,3 +1,8 @@
+"use client";
+import FadeInUp from "@/components/FadeInUp";
+import { motion, useInView, type Variants } from "framer-motion";
+import { useRef } from "react";
+
 const services = [
   {
     title: "Atención al cliente con IA",
@@ -57,11 +62,24 @@ const services = [
   },
 ];
 
+const containerVariants: Variants = {
+  hidden: {},
+  visible: { transition: { staggerChildren: 0.08 } },
+};
+
+const cardVariants: Variants = {
+  hidden: { opacity: 0, y: 24 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: "easeOut" } },
+};
+
 export default function Servicios() {
+  const gridRef = useRef(null);
+  const gridInView = useInView(gridRef, { once: true, margin: "-80px" });
+
   return (
     <section id="servicios" className="py-28 bg-gradient-to-b from-black to-[rgba(17,24,39,0.35)]">
       <div className="w-full max-w-[1160px] mx-auto px-6">
-        <div className="text-center mb-14">
+        <FadeInUp className="text-center mb-14">
           <span className="inline-block text-[0.7rem] font-semibold tracking-[0.16em] uppercase text-[#C4FF80] mb-4">
             Servicios
           </span>
@@ -71,12 +89,19 @@ export default function Servicios() {
           <p className="text-[1.05rem] text-[#9CA3AF] max-w-[580px] mx-auto">
             Desde la atención al cliente hasta la gestión interna, identificamos qué procesos liberan más tiempo y recursos.
           </p>
-        </div>
+        </FadeInUp>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mb-10">
+        <motion.div
+          ref={gridRef}
+          className="grid grid-cols-1 md:grid-cols-2 gap-5 mb-10"
+          variants={containerVariants}
+          initial="hidden"
+          animate={gridInView ? "visible" : "hidden"}
+        >
           {services.map((s) => (
-            <div
+            <motion.div
               key={s.title}
+              variants={cardVariants}
               className="bg-[#0f0f0f] border border-[rgba(255,255,255,0.08)] rounded-[14px] p-7 flex gap-5 items-start hover:border-[rgba(125,0,220,0.3)] hover:-translate-y-0.5 transition-all"
             >
               <div className="flex-shrink-0 w-11 h-11 bg-[rgba(125,0,220,0.1)] rounded-[10px] flex items-center justify-center text-[#7D00DC]">
@@ -86,15 +111,17 @@ export default function Servicios() {
                 <h3 className="font-['Syne'] text-[0.95rem] font-bold text-white mb-[0.35rem]">{s.title}</h3>
                 <p className="text-[0.85rem] text-[#9CA3AF] leading-[1.55]">{s.desc}</p>
               </div>
-            </div>
+            </motion.div>
           ))}
-        </div>
+        </motion.div>
 
-        <p className="text-center text-base text-[#9CA3AF] italic">
-          <span className="text-[#7D00DC]">&ldquo;</span>
-          Si es un proceso repetitivo, probablemente se puede automatizar.
-          <span className="text-[#7D00DC]">&rdquo;</span>
-        </p>
+        <FadeInUp delay={0.2}>
+          <p className="text-center text-base text-[#9CA3AF] italic">
+            <span className="text-[#7D00DC]">&ldquo;</span>
+            Si es un proceso repetitivo, probablemente se puede automatizar.
+            <span className="text-[#7D00DC]">&rdquo;</span>
+          </p>
+        </FadeInUp>
       </div>
     </section>
   );
