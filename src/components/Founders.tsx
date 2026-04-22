@@ -1,14 +1,14 @@
 const founders = [
   {
-    name: "Nombre Apellido",
-    role: "Co-founder & CEO",
-    bio: "Breve descripción del founder. Experiencia, background o qué aporta al proyecto.",
-    photo: null,
+    name: "Santiago Cattani",
+    role: "Co-founder",
+    bio: "",
+    photo: "/founders/santiago.jpeg",
   },
   {
     name: "Nombre Apellido",
-    role: "Co-founder & CTO",
-    bio: "Breve descripción del founder. Experiencia, background o qué aporta al proyecto.",
+    role: "Co-founder",
+    bio: "",
     photo: null,
   },
 ];
@@ -53,8 +53,7 @@ export default function Founders() {
               </div>
 
               <h3 className="font-['Neue_Haas_Grotesk_Display'] text-[1.1rem] font-bold text-white mb-1">{f.name}</h3>
-              <span className="text-[0.78rem] font-semibold tracking-[0.1em] uppercase text-[#7D00DC] mb-4">{f.role}</span>
-              <p className="text-[0.9rem] text-[#9CA3AF] leading-[1.7]">{f.bio}</p>
+              <span className="text-[0.78rem] font-semibold tracking-[0.1em] uppercase text-[#7D00DC]">{f.role}</span>
             </div>
           ))}
         </div>
