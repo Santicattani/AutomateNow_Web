@@ -1,15 +1,13 @@
 const founders = [
   {
     name: "Santiago Cattani",
-    role: "Co-founder",
-    bio: "",
+    role: "Co-founder & CTO",
     photo: "/founders/santiago.jpeg",
   },
   {
-    name: "Nombre Apellido",
-    role: "Co-founder",
-    bio: "",
-    photo: null,
+    name: "Valentín",
+    role: "Co-founder & CMO",
+    photo: "/founders/valentin.jpeg",
   },
 ];
 
@@ -41,15 +39,8 @@ export default function Founders() {
               key={f.name}
               className="flex flex-col items-center text-center p-8 rounded-2xl border border-[rgba(255,255,255,0.07)] bg-[rgba(255,255,255,0.02)]"
             >
-              <div className="w-24 h-24 rounded-full mb-6 overflow-hidden bg-[rgba(125,0,220,0.12)] border border-[rgba(125,0,220,0.25)] flex items-center justify-center flex-shrink-0">
-                {f.photo ? (
-                  <img src={f.photo} alt={f.name} className="w-full h-full object-cover" />
-                ) : (
-                  <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="rgba(125,0,220,0.5)" strokeWidth="1.5">
-                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
-                    <circle cx="12" cy="7" r="4" />
-                  </svg>
-                )}
+              <div className="w-24 h-24 rounded-full mb-6 overflow-hidden bg-[rgba(125,0,220,0.12)] border border-[rgba(125,0,220,0.25)] flex-shrink-0">
+                <img src={f.photo} alt={f.name} className="w-full h-full object-cover" />
               </div>
 
               <h3 className="font-['Neue_Haas_Grotesk_Display'] text-[1.1rem] font-bold text-white mb-1">{f.name}</h3>
