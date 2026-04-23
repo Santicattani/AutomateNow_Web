@@ -5,7 +5,7 @@ const founders = [
     photo: "/founders/santiago.jpeg",
   },
   {
-    name: "Valentín",
+    name: "Valentín Barisone",
     role: "Co-founder & CMO",
     photo: "/founders/valentin.jpeg",
   },
